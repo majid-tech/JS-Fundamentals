@@ -1,8 +1,8 @@
-// Check if the user argument (at index 2) is missing (undefined/falsy)
-if (!process.argv[2]) {
-    // If process.argv[2] is undefined, this block runs
-    console.log("No argument"); 
+
+if(process.argv.length <= 2){
+    console.log("No argument")
+} else if(process.argv.length === 3){
+    console.log("Argument found")
 } else {
-    // If process.argv[2] has a value (a string), this block runs
-    console.log("Argument found");
+    console.log("Arguments found")
 }
